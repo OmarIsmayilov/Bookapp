@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/toolbarback1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/admintext"
+            android:layout_height="wrap_content"
+            android:text="User dashboard"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/useremailtv"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/admintext"
+            android:text="example@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_marginTop="1dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/logoutbutton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="13dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_baseline_exit_to_app_24">
+
+        </ImageButton>
+    </RelativeLayout>
+
+</RelativeLayout>

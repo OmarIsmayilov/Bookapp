@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "155789217019",
+    "firebase_url": "https://recyclecardview-6714a-default-rtdb.firebaseio.com",
+    "project_id": "recyclecardview-6714a",
+    "storage_bucket": "recyclecardview-6714a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155789217019:android:73f4317a8309dbef9ab45e",
+        "android_client_info": {
+          "package_name": "com.omarismayilov.bookapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155789217019-jg8qvt3a1j4fn762febfid76d8k5r11c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf3E1udx9SvnH-kmYbiLfZ107QBt1XOQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155789217019-jg8qvt3a1j4fn762febfid76d8k5r11c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

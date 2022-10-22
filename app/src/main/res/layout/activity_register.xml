@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+    <!--ToolBar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/toolbarlayout"
+        android:background = "@drawable/toolbarback1">
+
+        <ImageView
+            android:layout_width="290dp"
+            android:id="@+id/lyimage"
+            android:layout_height="219dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pnglogo">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create New Account"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:translationY="-18dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/lyimage"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <!--EdirTexts-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:translationY="-20dp"
+        android:layout_below="@+id/toolbarlayout"
+        android:layout_marginBottom="712dp">
+
+
+        <!--Name-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/namely"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/nameet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextback"
+                android:drawableStart="@drawable/ic_baseline_supervisor_account_24"
+                android:drawablePadding="10dp"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="#C5C5C5"
+                android:textSize="20sp">
+
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Email-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/emailly"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/namely"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/emailet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextback"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="#C5C5C5"
+                android:textSize="20sp">
+
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Password-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/passwordly"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailly"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/passwordet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextback"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="#C5C5C5"
+                android:textSize="20sp">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--PasswordConfirm-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/passwordcfly"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordly"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/passwordcfet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextback"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:hint="Password confirm"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="#C5C5C5"
+                android:textSize="20sp">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <!--Forgot Password-->
+        <TextView
+            android:id="@+id/forgottv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordcfly"
+            android:layout_alignParentEnd="true"
+            android:text="Forgot password?"
+            android:textSize="17sp"
+            android:layout_marginTop="5dp"
+            tools:ignore="NotSibling">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/registerbutton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/forgottv"
+            android:layout_marginTop="17dp"
+            android:text="Register"
+            android:textSize="20sp">
+
+        </Button>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

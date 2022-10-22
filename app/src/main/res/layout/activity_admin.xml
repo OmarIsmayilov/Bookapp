@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/lytool"
+        android:background="@drawable/toolbarback1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/admintext"
+            android:layout_height="wrap_content"
+            android:text="Admin dashboard"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/adminemailtv"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/admintext"
+            android:text="example@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_marginTop="1dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:id="@+id/logoutbutton"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="13dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_baseline_exit_to_app_24">
+
+        </ImageButton>
+    </RelativeLayout>
+
+    <!--Search-->
+    <EditText
+        android:id="@+id/searchEt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lytool"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:paddingStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edittextback"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawablePadding="6dp"
+        android:hint="Search">
+
+    </EditText>
+
+    <!--Categories-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoriesRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addlinear"
+        android:layout_below="@+id/searchEt"
+        tools:listitem="@layout/row_category"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/addlinear"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addbutton"
+            android:layout_width="312dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/buttonback"
+            android:text="+ Add Category"
+            android:textColor="@color/purple_500"
+            android:textSize="21sp"
+            android:textStyle="bold">
+
+        </Button>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addPdfFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_baseline_picture_as_pdf_24"
+            app:backgroundTint="@color/purple_500"
+            app:fabCustomSize="50dp"
+            app:tint="@color/white">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </LinearLayout>
+
+</RelativeLayout>

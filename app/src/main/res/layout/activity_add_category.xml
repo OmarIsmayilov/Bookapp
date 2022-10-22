@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background = "@color/white"
+    android:layout_height="match_parent"
+    tools:context=".AddCategoryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/toolbarback1"
+        android:id="@+id/ly"
+        android:layout_height="270dp">
+
+
+        <ImageView
+            android:id="@+id/imagelogo"
+            android:layout_width="246dp"
+            android:layout_height="178dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="86dp"
+            android:src="@drawable/pnglogo">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagelogo"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="75dp"
+            android:text="Add a new category"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:translationY="-6dp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ly"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:translationY="-4dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/categoryEt"
+            android:background="@drawable/edittextback"
+            android:hint="Add category"
+            android:drawableStart="@drawable/ic_baseline_category_24"
+            android:layout_height="60dp"
+
+            android:drawablePadding="10dp"
+
+            >
+
+        </EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/submitbutton"
+            android:background="@drawable/buttonback2"
+            android:text="Submit"
+            android:textSize="21sp"
+            android:layout_margin="9dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/categoryEt"
+            >
+
+
+        </Button>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

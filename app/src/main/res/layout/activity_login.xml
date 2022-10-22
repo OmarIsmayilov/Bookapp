@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/toolbarlayout"
+        android:background = "@drawable/toolbarback1">
+
+        <ImageView
+            android:layout_width="290dp"
+            android:id="@+id/lyimage"
+            android:layout_height="219dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pnglogo">
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please login"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:translationY="-18dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/lyimage"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:translationY="-20dp"
+        android:layout_below="@+id/toolbarlayout"
+        android:layout_marginBottom="712dp">
+
+        <!--Email-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/layoutemail"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/emailet2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextback"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="#C5C5C5"
+                android:textSize="20sp">
+
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Password-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/lypassword"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutemail"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/passwordet2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextback"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="#C5C5C5"
+                android:textSize="20sp">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Forgot Password-->
+
+        <TextView
+            android:id="@+id/forgottv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lypassword"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:text="Forgot password?"
+            android:textSize="17sp"
+            tools:ignore="NotSibling">
+
+        </TextView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/loginbutton"
+            android:layout_height="55dp"
+            android:text="Login"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/forgottv"
+            >
+
+        </Button>
+
+    </RelativeLayout>
+
+
+    <!--No account Register-->
+    <TextView
+        android:id="@+id/noaccounttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/new_user"
+        android:textColor="#656565"
+        android:textSize="17sp">
+
+    </TextView>
+
+</RelativeLayout>

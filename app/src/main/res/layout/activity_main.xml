@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background = "@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="295dp"
+        android:layout_height="58dp"
+        android:layout_above="@+id/skipbutton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/edittextback"
+        android:text="Login"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <Button
+        android:id="@+id/skipbutton"
+        android:layout_width="295dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttonback"
+        android:text="Continue without login"
+        android:textColor="@color/purple_500"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="432dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pnglogo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-47dp"
+        android:layout_marginEnd="87dp"
+        android:text="Welcome to Book app"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+</RelativeLayout>
